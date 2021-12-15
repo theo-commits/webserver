@@ -2,8 +2,6 @@ name: Go CICD
 on: 
   push: 
     branches: [ master ]
-  pull-request: 
-    branches: [ master ]
   jobs: 
     build: 
       runs-on: ubuntu-latest

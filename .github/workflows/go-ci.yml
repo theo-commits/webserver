@@ -21,6 +21,8 @@ jobs:
       run: |
         go vet .
         golint .
+    - name: format go code
+      run: go fmt .
 
     - name: Send slack notification
       uses: 8398a7/action-slack@v3

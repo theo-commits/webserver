@@ -17,9 +17,6 @@ func main() {
 		enc := json.NewEncoder(w)
 		enc.Encode(m)
 	})
-	err := http.ListenAndServe(":3000", nil)
+	log.Fatal(http.ListenAndServe(":3000", nil))
 
-	if err != nil {
-		log.Fatal(err)
-	}
 }
